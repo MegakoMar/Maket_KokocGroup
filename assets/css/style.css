@@ -1,0 +1,56 @@
+.site-header {
+    display: flex;
+}
+
+.site-header_logo {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 24px;
+    font-size: 20px;
+    color: #141720;
+    text-decoration: none;
+}
+
+
+.main-menu {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+
+    color: #5D5F65;
+}
+
+.main-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-menu li {
+    display: inline-block;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-menu a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    padding: 8px 10px;
+}
+
+.main-menu a:hover {
+    color: red;
+    transition: color, 3s, ease;
+}
