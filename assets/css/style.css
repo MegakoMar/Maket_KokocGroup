@@ -76,6 +76,7 @@
     letter-spacing: 0.5px;
 
     color: #5D5F65;
+    padding-bottom: 281px;
 }
 
 .formstyle {
@@ -83,8 +84,88 @@
 }
 
 .content {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
+
 }
+
+.text-style {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 26px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.art-h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 26px;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.block {
+    padding: 225px 117px 241px 153px;
+}
+
+.black-bg {
+    background-color: black;
+    color: #ffffff;
+}
+
+.white-bg {
+    background-color: #ffffff;
+    color: #5D5F65;
+}
+
+.list-style {
+    background-color: #EFEFEF;
+    padding: 139px 154px 140px 153px;
+}
+
+.list-style li{
+    padding:  0 30px;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 26px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+
+    color: #5D5F65;
+
+    list-style-type: none;
+}
+
+.list-style li h3 {
+    margin-bottom: 14px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 26px;
+    font-size: 20px;
+    color: #141720;
+}
+
+.input-style {
+    color: #ffffff;
+    border-bottom-color: white;
+
+}
+
+.button-style {
+    padding: 5px;
+    margin: 5px;
+    background-color: red;
+    border-radius: 25px;
+
+    color: white;
+
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 26px;
+    font-size: 15px;
+    letter-spacing: 0.1875px;
 }
