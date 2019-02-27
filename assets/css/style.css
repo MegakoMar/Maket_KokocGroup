@@ -1,5 +1,9 @@
+@import 'grid.css';
+
 .site-header {
     display: flex;
+    margin-top:  31px;
+    margin-left: 153px;
 }
 
 .site-header_logo {
@@ -34,14 +38,6 @@
     display: inline-block;
 }
 
-.container {
-    margin: 0 auto;
-}
-
-.row {
-    display: flex;
-    justify-content: flex-end;
-}
 
 .main-menu a {
     display: block;
@@ -53,4 +49,42 @@
 .main-menu a:hover {
     color: red;
     transition: color, 3s, ease;
+}
+
+.header-h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 54px;
+    font-size: 44px;
+    text-align: center;
+    letter-spacing: 1px;
+
+    color: #141720;
+
+    width: 100%;
+    padding-top: 269px;
+}
+
+.header-h2 {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 60px;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 0.5px;
+
+    color: #5D5F65;
+}
+
+.formstyle {
+    display: flex;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
 }
