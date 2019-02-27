@@ -105,6 +105,12 @@
     letter-spacing: 1px;
 }
 
+.art-h1-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 87px;
+}
+
 .block {
     padding: 225px 117px 241px 153px;
 }
