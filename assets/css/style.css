@@ -81,6 +81,7 @@
 
 .formstyle {
     display: flex;
+    justify-content: center;
 }
 
 .content {
@@ -154,11 +155,22 @@
     color: #141720;
 }
 
-.input-style {
-    color: #ffffff;
-    border-bottom-color: white;
+input, textarea {
+    border-bottom:2px solid #ffffff;
+    padding: 3px;
+    margin: 2px 0px;
+    background-color: black;
+    width: 450px;
+
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 26px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
 
 }
+
 
 .button-style {
     padding: 5px;
