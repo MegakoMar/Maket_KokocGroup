@@ -117,7 +117,7 @@
 }
 
 .black-bg {
-    background-color: black;
+    background: #141720;
     color: #ffffff;
 }
 
@@ -158,9 +158,9 @@
 input, textarea {
     border-bottom:2px solid #ffffff;
     padding: 3px;
-    margin: 2px 0px;
-    background-color: black;
+    background: #141720;
     width: 450px;
+    height: 60px;
 
     font-family: Ubuntu;
     font-style: normal;
@@ -168,11 +168,11 @@ input, textarea {
     line-height: 26px;
     font-size: 15px;
     letter-spacing: 0.5px;
-
 }
 
 textarea {
-    
+    resize: none;
+    height: 200px;
 }
 
 
@@ -190,4 +190,8 @@ textarea {
     line-height: 26px;
     font-size: 15px;
     letter-spacing: 0.1875px;
+}
+
+.form-h2 {
+    margin:139px 310px 87px 150px;
 }
