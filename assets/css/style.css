@@ -82,6 +82,7 @@
 .formstyle {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .content {
@@ -113,7 +114,9 @@
 }
 
 .block {
-    padding: 225px 117px 241px 153px;
+    padding: 225px 110px 180px 153px;
+    justify-content: center;
+    align-items: center;
 }
 
 .black-bg {
@@ -156,10 +159,10 @@
 }
 
 input, textarea {
+    border: 0px;
     border-bottom:2px solid #ffffff;
-    padding: 3px;
     background: #141720;
-    width: 450px;
+    width: 500px;
     height: 60px;
 
     font-family: Ubuntu;
@@ -176,11 +179,12 @@ textarea {
 }
 
 
-.button-style {
+button {
     padding: 5px;
     margin: 5px;
     background-color: red;
-    border-radius: 25px;
+    border-radius: 15px;
+    border: 0px;
 
     color: white;
 
@@ -192,6 +196,49 @@ textarea {
     letter-spacing: 0.1875px;
 }
 
+button:hover {
+    background-color: white;
+    color: red;
+}
+
 .form-h2 {
     margin:139px 310px 87px 150px;
+}
+
+.event {
+    display: flex;
+    align-items: baseline;
+}
+
+.event .year, .event .title {
+    padding: 4px 8px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: white;
+}
+
+.form {
+    margin-top: 20px;
+}
+
+.img {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -10px;
+}
+
+.tile {
+    padding: 20px;
+}
+
+.img1 {
+    display: flex;
+    justify-content: center;
+}
+
+.img2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
