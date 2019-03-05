@@ -30,7 +30,7 @@ header('Content-Type: text/html; charset=utf-8');
         <div>
             <label>
                 Номер телефона:
-                <input type="text" name="number" placeholder="Введите номер" value="+7">
+                <input type="text" name="number" placeholder="Введите номер" value="+7" maxlength="12">
             </label>
         </div>
         <div>
