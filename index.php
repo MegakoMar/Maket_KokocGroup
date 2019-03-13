@@ -8,7 +8,7 @@ header('Content-Type: text/html; charset=utf-8');
 </head>
 <body>
     <h2>Крутая форма для диванных экспертов</h2>
-    <form action="post.php" method="post">
+    <form action="form.php" method="post">
         <div>
             <label>
                 Фамилия:
@@ -18,7 +18,7 @@ header('Content-Type: text/html; charset=utf-8');
         <div>
             <label>
                 Имя:
-                <input type="text" name="name" placeholder="Введите имя">
+                <input type="text" name="name" placeholder="Введите имя" required>
             </label>
         </div>
         <div>
@@ -75,10 +75,10 @@ header('Content-Type: text/html; charset=utf-8');
         </div>
         <label>
             Комментарий:<br>
-            <textarea type="text" name="message" placeholder="Ваше мнение"></textarea><br>
+            <textarea type="text" name="message" placeholder="Ваше мнение" required></textarea><br>
         </label>
         <button type="submit">Подтвердить</button>
-        <input type="hidden" name="secret" value="Я согласен, что мой комментарий увидят все:D">
+        <input type="hidden" name="datetime" value="<?php date("Y-m-d H:i:s"); ?>">
     </form>
 </body>
 </html>
