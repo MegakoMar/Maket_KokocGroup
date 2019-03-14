@@ -78,7 +78,7 @@ header('Content-Type: text/html; charset=utf-8');
             <textarea type="text" name="message" placeholder="Ваше мнение" required></textarea><br>
         </label>
         <button type="submit">Подтвердить</button>
-        <input type="hidden" name="datetime" value="<?php date("Y-m-d H:i:s"); ?>">
+        <input type="hidden" name="datetime" value="<?php $date = date("Y-m-d H:i:s"); echo htmlspecialchars($date); ?>">
     </form>
 </body>
 </html>
