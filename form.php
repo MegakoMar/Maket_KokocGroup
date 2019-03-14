@@ -25,7 +25,7 @@ $timeSendForm = date("Y-m-d H:i:s");
 $topic = "";
 
 echo '<br>';
-echo 'Открытие - '.$timeOpenForm.' Отправка - '.$timeSendForm.'<br>';
+//echo 'Открытие - '.$timeOpenForm.' Отправка - '.$timeSendForm.'<br>';
 
 switch ($sex) {
     case 'male':
@@ -33,6 +33,9 @@ switch ($sex) {
         break;
     case 'female':
         $sex = 'Женский';
+        break;
+    case '':
+        $sex = '';
         break;
 }
 
@@ -73,7 +76,7 @@ if (empty($message))
     $message = 'Пользователь не оставил комментарий';
 }
 
-echo "Данные комментатора<br> Фамилия: $surname Имя: $name<br> Пол: $sex <br>Контактные данные:<br>Email: $email <br>Телефона: $number<br>Сообщение: - $message";
+echo "Данные комментатора<br> Фамилия: $surname<br>  Имя: $name<br> Пол: $sex <br>Контактные данные:<br>Email: $email <br>Телефона: $number<br>Сообщение: - $message";
 echo '<br>';
 if (empty($topics))
 {
@@ -90,8 +93,8 @@ else {
     }
 }
 
-
-//mail ($emailTo , "От диванных экспертов" , "Данные комментатора\n Фамилия: $surname \nИмя: $name \nПол: $sex \nКонтактные данные:\nEmail: $email \nТелефона $number\nСообщение: - $message \n Разбирается в следующих темах: \n $topic\n", "From $emailFrom");
+//Отправка данных на почту, чтобы не спамить при тестах, пока что отключено
+mail ($emailTo , "От диванных экспертов" , "Данные комментатора\n Фамилия: $surname \nИмя: $name \nПол: $sex \nКонтактные данные:\nEmail: $email \nТелефона $number\nСообщение: - $message \n Разбирается в следующих темах: \n $topic\n", "From $emailFrom");
 
 
 
